@@ -19,6 +19,7 @@ specific_columns = truck_events_subset[
 ]
 specific_columns
 
+
 # Obtención de un subconjunto de filas y columnas
 new_sub_set = truck_events.loc[0:10, ["driverId", "eventTime", "eventType"]]
 new_sub_set
@@ -29,6 +30,7 @@ truck_events.iloc[1]["eventKey"]
 
 # Escritura de la tabla en el disco
 import os
+
 if not os.path.exists("files/output/"):
     os.makedirs("files/output/")
 
